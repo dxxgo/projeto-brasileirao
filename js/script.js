@@ -1,1 +1,196 @@
-const _0x5a6216=_0x6f80;(function(_0xdc5af0,_0x5ead03){const _0x460cbd=_0x6f80,_0x4a4425=_0xdc5af0();while(!![]){try{const _0x33ceda=-parseInt(_0x460cbd(0x182))/0x1*(-parseInt(_0x460cbd(0x14f))/0x2)+-parseInt(_0x460cbd(0x16a))/0x3+-parseInt(_0x460cbd(0x142))/0x4*(parseInt(_0x460cbd(0x13c))/0x5)+-parseInt(_0x460cbd(0x132))/0x6*(parseInt(_0x460cbd(0x15a))/0x7)+-parseInt(_0x460cbd(0x164))/0x8+-parseInt(_0x460cbd(0x16b))/0x9*(parseInt(_0x460cbd(0x137))/0xa)+-parseInt(_0x460cbd(0x13d))/0xb*(-parseInt(_0x460cbd(0x15c))/0xc);if(_0x33ceda===_0x5ead03)break;else _0x4a4425['push'](_0x4a4425['shift']());}catch(_0x36e365){_0x4a4425['push'](_0x4a4425['shift']());}}}(_0x505d,0x9259b));let tabelaClassificacao=document[_0x5a6216(0x138)](_0x5a6216(0x156)),tabelaArtilheiros=document[_0x5a6216(0x138)](_0x5a6216(0x14a)),tabelaPartidas=document[_0x5a6216(0x138)](_0x5a6216(0x17e)),equipesURL=_0x5a6216(0x12d),artilheirosURL=_0x5a6216(0x159),livescoreURL=_0x5a6216(0x183);const init={'method':_0x5a6216(0x148),'mode':'no-cors','Content-Type':'application/json'};async function getEquipes(_0x473418){const _0x409562=_0x5a6216;await fetch(_0x473418)[_0x409562(0x15d)](_0x40bd00=>_0x40bd00[_0x409562(0x157)]())[_0x409562(0x15d)](_0x2849f3=>{let _0x530e1c=_0x2849f3['data'][0x0];_0x530e1c['shift']();let _0x1b15c8=_0x530e1c;criaObjetoTime(_0x1b15c8),alterarHeight();}),document[_0x409562(0x138)](_0x409562(0x140))[_0x409562(0x12f)][_0x409562(0x146)]='1';}function alterarHeight(){const _0xa201d7=_0x5a6216;document[_0xa201d7(0x138)](_0xa201d7(0x134))['style'][_0xa201d7(0x174)]=getComputedStyle(document['querySelector'](_0xa201d7(0x173)))[_0xa201d7(0x13b)](_0xa201d7(0x174));}function _0x6f80(_0x53d8fe,_0x58c654){const _0x505dca=_0x505d();return _0x6f80=function(_0x6f80f0,_0x149c80){_0x6f80f0=_0x6f80f0-0x12b;let _0x486a77=_0x505dca[_0x6f80f0];return _0x486a77;},_0x6f80(_0x53d8fe,_0x58c654);}function criaObjetoTime(_0x4a7da9){const _0x2c703e=_0x5a6216;let _0x5e0ef5=[];_0x4a7da9[_0x2c703e(0x131)](_0x20ab36=>{const _0x16ca84=_0x2c703e;let _0x32431e=[];_0x32431e[_0x16ca84(0x180)]=_0x20ab36[0x0],_0x32431e[_0x16ca84(0x154)]=_0x20ab36[0x1],_0x32431e[_0x16ca84(0x171)]=_0x20ab36[0x2],_0x32431e[_0x16ca84(0x178)]=_0x20ab36[0x3],_0x32431e[_0x16ca84(0x15f)]=_0x20ab36[0x4],_0x32431e[_0x16ca84(0x144)]=_0x20ab36[0x5],_0x32431e[_0x16ca84(0x17d)]=_0x20ab36[0x6],_0x32431e[_0x16ca84(0x141)]=_0x20ab36[0x7],_0x32431e[_0x16ca84(0x16d)]=_0x20ab36[0x8],_0x32431e[_0x16ca84(0x13f)]=_0x20ab36[0x9],_0x32431e['porcentagem']=_0x20ab36[0xa],_0x5e0ef5[_0x16ca84(0x17a)](_0x32431e);}),formataTabela(_0x5e0ef5);}function formataNomeEquipe(_0x2a0989){const _0x1808ca=_0x5a6216;return _0x2a0989=_0x2a0989[_0x1808ca(0x16c)](),_0x2a0989=_0x2a0989[_0x1808ca(0x14c)](_0x1808ca(0x155))[_0x1808ca(0x135)](/[\u0300-\u036f]/g,''),_0x2a0989=_0x2a0989[_0x1808ca(0x12c)]('\x20','-'),_0x2a0989;}function formataTabela(_0x4008f0){const _0x686e2f=_0x5a6216;let _0x319618=tabelaClassificacao[_0x686e2f(0x17c)][0x3];_0x319618[_0x686e2f(0x15b)]='',_0x4008f0[_0x686e2f(0x131)](_0x1c431f=>{const _0x4f4252=_0x686e2f;_0x319618[_0x4f4252(0x15b)]+=_0x4f4252(0x153)+(_0x1c431f[_0x4f4252(0x180)]<=0x4?_0x4f4252(0x177):_0x1c431f[_0x4f4252(0x180)]>0x4&&_0x1c431f[_0x4f4252(0x180)]<=0x6?_0x4f4252(0x149):_0x1c431f[_0x4f4252(0x180)]>0x6&&_0x1c431f[_0x4f4252(0x180)]<=0xc?_0x4f4252(0x136):_0x1c431f[_0x4f4252(0x180)]>0xc&&_0x1c431f[_0x4f4252(0x180)]<=0x10?'':_0x4f4252(0x14d))+'\x27>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+_0x1c431f[_0x4f4252(0x180)]+_0x4f4252(0x160)+formataNomeEquipe(_0x1c431f[_0x4f4252(0x154)])+_0x4f4252(0x17f)+_0x1c431f['nome']+_0x4f4252(0x147)+_0x1c431f[_0x4f4252(0x171)]+_0x4f4252(0x143)+_0x1c431f[_0x4f4252(0x178)]+'</td>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<td>'+_0x1c431f[_0x4f4252(0x15f)]+'</td>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<td>'+_0x1c431f[_0x4f4252(0x144)]+'</td>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<td>'+_0x1c431f['derrotas']+_0x4f4252(0x143)+_0x1c431f['golsPro']+_0x4f4252(0x143)+_0x1c431f[_0x4f4252(0x16d)]+_0x4f4252(0x143)+_0x1c431f['saldoGols']+'</td>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<td>'+_0x1c431f['porcentagem']+_0x4f4252(0x184);});}function _0x505d(){const _0x2b4d9f=['childNodes','derrotas','.partidas-container','.png\x27>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','posicao','remove','133975xshavd','https://www.cbf.com.br/api/livescore','</td>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</tr>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','hora','replaceAll','https://atlas.jifo.co/api/connectors/42ebd7dd-0c34-432a-af80-93ad3ae0e5fc','Finalizado','style','</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<img\x20src=\x27','forEach','15594dTyMrY','competicao','.container2','replace','sulamericana','11227030QdOciA','querySelector','none','add','getPropertyValue','5mVZqvn','11YtHkAF','</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span>','saldoGols','body','golsPro','928076vpqDHP','</td>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<td>','empates','ds_status','opacity','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</td>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<td>','GET','qualiLibertadores','.artilheiros-container','nm_curto_visitante','normalize','rebaixado','<h4>Finalizadas</h4>','14usGqOe','data','\x27>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span>','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22jogador-block\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22rank-jogador\x22>','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<tr>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<td\x20class=\x27\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','nome','NFD','.tabela-classificacao','json','visitante','https://atlas.jifo.co/api/connectors/a5f4ee1f-2edd-445a-b109-1ac4663a5b6a','931JXySxo','innerHTML','25958316oPsZvT','then','classList','vitorias','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</td>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<td>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<img\x20style=\x27width:20px\x27\x20src=\x27./images/equipes-escudos/','hidden','Em\x20Andamento','\x0a\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x27partida-block\x27>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<p\x20class=\x27competicao\x27>','1323808BcRQEK','</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20-\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span>','<h4>Ainda\x20vai\x20rolar</h4>','\x27>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20class=\x27hora-partida\x27>','filter','visitante_imagem','1907106hygrCA','9SjDxnA','toLowerCase','golsContra','mandante','</p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x27clubes-block\x27>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<img\x20src=\x27','display','pontos','</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20','.tabela-container','height','<h4>Em\x20andamento</h4>','mandante_imagem','libertadores','jogos','toLocaleDateString','push','length'];_0x505d=function(){return _0x2b4d9f;};return _0x505d();}async function getArtilheiros(_0x549c57){const _0x5b962b=_0x5a6216;await fetch(_0x549c57)['then'](_0x4efb2c=>_0x4efb2c['json']())[_0x5b962b(0x15d)](_0x5cc348=>{const _0x469d23=_0x5b962b;let _0x24fade=_0x5cc348[_0x469d23(0x150)][0x0];_0x24fade['shift'](),formataArtilheirosHTML(_0x24fade);});}function formataArtilheirosHTML(_0x5d54d7){const _0x5460a6=_0x5a6216;_0x5d54d7[_0x5460a6(0x131)](_0x24128c=>{const _0x17a5e8=_0x5460a6;tabelaArtilheiros[_0x17a5e8(0x15b)]+=_0x17a5e8(0x152)+_0x24128c[0x0]+'</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22nome-jogador\x22>'+_0x24128c[0x1]+'</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22gols-jogador\x22>'+_0x24128c[0x2]+'</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20';});}async function getLivescore(_0x2bc67d){const _0x1ba496=_0x5a6216;await fetch(_0x2bc67d)[_0x1ba496(0x15d)](_0x48b410=>_0x48b410['json']())[_0x1ba496(0x15d)](_0xb8cf9e=>{const _0x4acef3=_0x1ba496;let _0x40422b=_0xb8cf9e[_0x4acef3(0x168)](_0x37b83d=>_0x37b83d[_0x4acef3(0x145)]==_0x4acef3(0x162)),_0x50f53b=_0xb8cf9e[_0x4acef3(0x168)](_0x18db57=>_0x18db57[_0x4acef3(0x145)]==_0x4acef3(0x12e)),_0x153e83=_0xb8cf9e['filter'](_0x1e1723=>_0x1e1723[_0x4acef3(0x145)]=='');_0x153e83=verificaData(_0x153e83);if(_0x40422b[_0x4acef3(0x17b)]<0x1&&_0x50f53b['length']<0x1&&_0x153e83[_0x4acef3(0x17b)]<0x1){tabelaPartidas[_0x4acef3(0x12f)][_0x4acef3(0x170)]=_0x4acef3(0x139);return;}formataPartidasHTML(_0x40422b,_0x50f53b,_0x153e83);});}function verificaData(_0x13f734){const _0x36c5a3=_0x5a6216;let _0x2d75d7=new Date()[_0x36c5a3(0x179)]()['slice'](0x0,0x5);return _0x13f734[_0x36c5a3(0x168)](_0x16c79e=>_0x16c79e[_0x36c5a3(0x150)]==_0x2d75d7);}function formataBlocoPartidasHTML(_0x40ba46){const _0x58cf72=_0x5a6216;return _0x58cf72(0x163)+_0x40ba46[_0x58cf72(0x133)]+_0x58cf72(0x16f)+_0x40ba46[_0x58cf72(0x176)]+_0x58cf72(0x151)+_0x40ba46['nm_curto_mandante']+_0x58cf72(0x13e)+_0x40ba46[_0x58cf72(0x16e)]+_0x58cf72(0x165)+_0x40ba46[_0x58cf72(0x158)]+_0x58cf72(0x13e)+_0x40ba46[_0x58cf72(0x14b)]+_0x58cf72(0x130)+_0x40ba46[_0x58cf72(0x169)]+_0x58cf72(0x167)+_0x40ba46[_0x58cf72(0x12b)]+_0x58cf72(0x172);}function formataPartidasHTML(_0x464b31,_0x23d85c,_0x15a788){const _0x351a02=_0x5a6216;let _0x3d31de=tabelaPartidas[_0x351a02(0x17c)][0x3],_0x568bed=tabelaPartidas[_0x351a02(0x17c)][0x5],_0x531707=tabelaPartidas[_0x351a02(0x17c)][0x7];_0x3d31de['classList'][_0x351a02(0x13a)](_0x351a02(0x161)),_0x568bed[_0x351a02(0x15e)]['add'](_0x351a02(0x161)),_0x531707[_0x351a02(0x15e)][_0x351a02(0x13a)]('hidden'),_0x3d31de[_0x351a02(0x15b)]=_0x351a02(0x175),_0x568bed[_0x351a02(0x15b)]=_0x351a02(0x14e),_0x531707[_0x351a02(0x15b)]=_0x351a02(0x166),_0x464b31[_0x351a02(0x131)](_0x2fedee=>{const _0x3f0394=_0x351a02;_0x3d31de[_0x3f0394(0x15e)]['remove']('hidden'),_0x3d31de[_0x3f0394(0x15b)]+=formataBlocoPartidasHTML(_0x2fedee);}),_0x23d85c[_0x351a02(0x131)](_0x7c79c9=>{const _0x2a626b=_0x351a02;_0x568bed['classList'][_0x2a626b(0x181)](_0x2a626b(0x161)),_0x568bed[_0x2a626b(0x15b)]+=formataBlocoPartidasHTML(_0x7c79c9);}),_0x15a788[_0x351a02(0x131)](_0x444a18=>{const _0x1bb68f=_0x351a02;_0x531707['classList']['remove'](_0x1bb68f(0x161)),_0x531707[_0x1bb68f(0x15b)]+=formataBlocoPartidasHTML(_0x444a18);});}setInterval(()=>{getLivescore(livescoreURL);},0x4e20),getLivescore(livescoreURL),getEquipes(equipesURL),getArtilheiros(artilheirosURL);
+let tabelaClassificacao = document.querySelector('.tabela-classificacao');
+let tabelaArtilheiros = document.querySelector('.artilheiros-container');
+let tabelaPartidas = document.querySelector('.partidas-container');
+
+let equipesURL = 'https://atlas.jifo.co/api/connectors/42ebd7dd-0c34-432a-af80-93ad3ae0e5fc'
+let artilheirosURL = 'https://atlas.jifo.co/api/connectors/a5f4ee1f-2edd-445a-b109-1ac4663a5b6a'
+let livescoreURL = 'https://www.cbf.com.br/api/livescore'
+
+const init = {
+    method: 'GET',
+    mode: 'no-cors',
+    "Content-Type": "application/json"
+};
+
+async function getEquipes(url) {
+    await fetch(url)
+        .then(response => response.json())
+        .then(data => {
+            let dados = data.data[0];
+            dados.shift();
+            let equipes = dados;
+            criaObjetoTime(equipes)
+            alterarHeight();
+        })
+        document.querySelector('body').style.opacity = '1'
+}
+
+function alterarHeight() {
+    document.querySelector('.container2').style.height =
+    getComputedStyle(document.querySelector('.tabela-container')).getPropertyValue('height')
+}
+
+function criaObjetoTime(equipes) {
+    let listaEquipes = []
+    equipes.forEach(e => {
+        let time = [];
+        time.posicao = e[0];
+        time.nome = e[1];
+        time.pontos = e[2];
+        time.jogos = e[3];
+        time.vitorias = e[4];
+        time.empates = e[5];
+        time.derrotas = e[6];
+        time.golsPro = e[7];
+        time.golsContra = e[8];
+        time.saldoGols = e[9];
+        time.porcentagem = e[10];
+        listaEquipes.push(time);
+
+    });
+    formataTabela(listaEquipes);
+}
+
+function formataNomeEquipe(nome) {
+    nome = nome.toLowerCase()
+    nome = nome.normalize('NFD').replace(/[\u0300-\u036f]/g, "");
+    nome = nome.replaceAll(' ','-')
+    return nome
+}
+
+function formataTabela(listaEquipes) {
+    let tbody = tabelaClassificacao.childNodes[3];
+    tbody.innerHTML = ''
+    listaEquipes.forEach(equipe => {
+        tbody.innerHTML += (
+            `
+                        <tr>
+                            <td class='
+                            ${equipe.posicao <= 4 ? 'libertadores'
+                            : equipe.posicao > 4 && equipe.posicao <= 6 ? 'qualiLibertadores'
+                            : equipe.posicao > 6 && equipe.posicao <= 12 ? 'sulamericana'
+                            : equipe.posicao > 12 && equipe.posicao <= 16 ? '': 'rebaixado'
+                            }'>
+                            ${equipe.posicao}
+                            </td>
+                            <td>
+                            <img style='width:20px' src='./images/equipes-escudos/${formataNomeEquipe(equipe.nome)}.png'>
+                            ${equipe.nome}
+                            </td>
+                            <td>${equipe.pontos}</td>
+                            <td>${equipe.jogos}</td>
+                            <td>${equipe.vitorias}</td>
+                            <td>${equipe.empates}</td>
+                            <td>${equipe.derrotas}</td>
+                            <td>${equipe.golsPro}</td>
+                            <td>${equipe.golsContra}</td>
+                            <td>${equipe.saldoGols}</td>
+                            <td>${equipe.porcentagem}</td>
+                        </tr>
+                        `
+        )
+
+    })
+
+
+}
+
+async function getArtilheiros(url) {
+    await fetch(url)
+        .then(response => response.json())
+        .then(data => {
+            let jogadores = data.data[0];
+            jogadores.shift();
+            formataArtilheirosHTML(jogadores);
+        })
+}
+
+function formataArtilheirosHTML(jogadores) {
+    jogadores.forEach(jogador => {
+        tabelaArtilheiros.innerHTML += 
+                (`
+                <div class="jogador-block">
+                    <div class="rank-jogador">${jogador[0]}</div>
+                    <div class="nome-jogador">${jogador[1]}</div>
+                    <div class="gols-jogador">${jogador[2]}</div>
+                </div>
+                `);
+    });
+}
+
+
+async function getLivescore(url) {
+    await fetch(url)
+        .then(response => response.json())
+        .then(data => {
+            let andamento = data.filter(e => e.ds_status == 'Em Andamento');
+            let finalizadas = data.filter(e => e.ds_status == 'Finalizado');
+            let acontecer = data.filter(e => e.ds_status == '');
+            acontecer = verificaData(acontecer);
+            if (andamento.length < 1 && finalizadas.length < 1 && acontecer.length < 1) {
+                tabelaPartidas.style.display = 'none'; 
+                return;
+            }
+            formataPartidasHTML(andamento, finalizadas, acontecer)
+        })
+}
+
+
+function verificaData(jogosAcontecer) {
+    let dataAtual = new Date().toLocaleDateString().slice(0, 5);
+    return jogosAcontecer.filter(jogo => jogo.data == dataAtual)
+}
+
+function formataBlocoPartidasHTML(partida) {
+    return (
+        `
+        <div class='partida-block'>
+            <p class='competicao'>${partida.competicao}</p>
+            <div class='clubes-block'>
+                <img src='${partida.mandante_imagem}'>
+                <span>${partida.nm_curto_mandante}</span>
+                <span>${partida.mandante}</span>
+                -
+                <span>${partida.visitante}</span>
+                <span>${partida.nm_curto_visitante}</span>
+                <img src='${partida.visitante_imagem}'>
+            </div>
+            <span class='hora-partida'>${partida.hora}</span>
+        </div>
+        `
+        )
+}
+
+function formataPartidasHTML(andamento, finalizadas, acontecer) {
+    let andamentoBlock = tabelaPartidas.childNodes[3];
+    let finalizadasBlock = tabelaPartidas.childNodes[5];
+    let acontecerblock = tabelaPartidas.childNodes[7];
+
+    andamentoBlock.classList.add('hidden');
+    finalizadasBlock.classList.add('hidden');
+    acontecerblock.classList.add('hidden');
+
+    andamentoBlock.innerHTML = '<h4>Em andamento</h4>'
+    finalizadasBlock.innerHTML = '<h4>Finalizadas</h4>'
+    acontecerblock.innerHTML = '<h4>Ainda vai rolar</h4>'
+    andamento.forEach(partida => {
+        andamentoBlock.classList.remove('hidden');
+        andamentoBlock.innerHTML +=  formataBlocoPartidasHTML(partida)
+    });
+    finalizadas.forEach(partida => {
+        finalizadasBlock.classList.remove('hidden');
+        finalizadasBlock.innerHTML +=  formataBlocoPartidasHTML(partida)
+    });
+    acontecer.forEach(partida => {
+        acontecerblock.classList.remove('hidden');
+        acontecerblock.innerHTML +=  formataBlocoPartidasHTML(partida)
+    });
+}
+
+setInterval(() => {
+    getLivescore(livescoreURL);
+}, 20000);
+
+getLivescore(livescoreURL);
+getEquipes(equipesURL);
+getArtilheiros(artilheirosURL);
