@@ -1,0 +1,398 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,500;0,600;0,700;0,800;1,200;1,500&display=swap');
+
+:root {
+    --opacityBlue: rgba(10, 25, 60, .05);
+    --principalBlue: rgba(10, 25, 60)
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif, Arial;
+    font-size: 16px;
+    color: #123456;
+}
+
+body {
+    padding: 120px 20px 60px;
+    gap: 20px;
+    background-color: var(--principalBlue);
+    opacity: 0;
+}
+
+h1{
+    margin: 20px 0;
+    font-size: 2.5em;
+    line-height: 1;
+    text-align: center;
+    color: white;
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    left: 0;
+    padding: 0 20px;
+}
+
+.tabela-container {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: white;
+    overflow-x: auto;
+    position: relative;
+    max-width: 700px;
+    width: 100%;
+    height: 100%;
+}
+
+.tabela-container::-webkit-scrollbar {
+    height: 20px;
+    border-radius: 10px;
+}
+
+.tabela-container::-webkit-scrollbar-track {
+    background: #eee;
+    border-radius: 0px 0px 10px 10px;
+}
+
+
+.tabela-container::-webkit-scrollbar-thumb {
+    background-color: var(--principalBlue);
+    border-radius: 20px;
+    border: 5px solid #eee;
+  }
+
+.tabela-classificacao {
+    text-align: left;
+    border-collapse: collapse;
+    margin-top: 100px;
+    width: 100%;
+}
+
+.tabela-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    gap: 10px;
+    left: 20px;
+    top: 20px;
+}
+
+.header-logo {
+    width: 50px;
+}
+
+.header-titulo {
+    font-size: 1.5em;
+    font-weight: 800;
+    color: #123456;
+    line-height: 1.1;
+}
+
+.tabela-classificacao thead :nth-child(2) {
+    text-align: left;
+}
+
+.tabela-classificacao thead th {
+    padding-bottom: 10px;
+    color: rgb(18, 46, 37);
+    padding: 0 10px;
+    text-align: center;
+}
+
+.tabela-classificacao tbody td:nth-child(2) {
+    font-weight: 600;
+    text-align: left;
+    min-width: 150px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+    padding: 4px 0;
+}
+
+.tabela-classificacao tbody tr:nth-child(even){
+    background-color: var(--opacityBlue);
+}
+
+.tabela-classificacao tbody td {
+    color: #555;
+    color: rgb(18, 46, 37);
+    padding: 0 10px;
+    text-align: center;
+}
+
+.rebaixado {
+    border-left: 6px solid red;
+}
+
+.libertadores {
+    border-left: 6px solid cornflowerblue;
+}
+
+.qualiLibertadores {
+    border-left: 6px solid orange;
+}
+
+.sulamericana {
+    border-left: 6px solid green;
+}
+
+.legenda-block {
+    margin: 20px 0 10px;
+    width: 100%;
+}
+
+.legenda-block li {
+    font-size: .7em;
+    list-style: none;
+    font-weight: 600;
+    color: #555;
+    line-height: 1;
+    white-space: nowrap;
+}
+
+.legenda-block ul {
+    display: flex;
+    gap: 20px;
+    max-width: 150px;
+}
+
+.legenda-block li span {
+    margin-right: 5px;
+}
+
+.legenda-block li:nth-child(1) span {
+    color: cornflowerblue
+}
+
+.legenda-block li:nth-child(2) span {
+    color: orange;
+}
+
+.legenda-block li:nth-child(3) span {
+    color: green;
+}
+
+.legenda-block li:nth-child(4) span {
+    color: red;
+}
+
+/* Artilheiros */
+
+.artilheiros-container {
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    display: grid;
+    gap: 10px;
+    position: relative;
+}
+
+.artilheiros-titulo {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    font-weight: 600;
+    padding-right: 5px;
+}
+
+.artilheiros-titulo > * {
+    font-size: 1.2em;
+    font-weight: 800;
+}
+
+.jogador-block {
+    background-color: var(--opacityBlue);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 0 10px;
+}
+
+.rank-jogador {
+    font-size: 1.5em;
+    font-weight: 800;
+    text-align: center;
+}
+
+.nome-jogador {
+    font-size: 1em;
+    font-weight: 600;
+    line-height: 1;
+    width: 100%;
+    padding: 0 20px 0 10px;
+}
+
+.gols-jogador {
+    font-size: 1.5em;
+    font-weight: 800;
+}
+
+/* Partidas */
+
+.container {
+    display: flex;
+    gap: 20px;
+    align-items: start;
+    justify-content: center;
+    flex-direction: row;
+    height: 100%;
+}
+
+.container2 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.partidas-container {
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    text-align: center;
+    overflow-y: scroll;
+}
+
+.partidas-container::-webkit-scrollbar {
+    width: 20px;
+    border-radius: 10px;
+}
+
+.partidas-container::-webkit-scrollbar-track {
+    background: #eee;
+    border-radius: 0 10px 10px 0;
+}
+
+
+.partidas-container::-webkit-scrollbar-thumb {
+    background-color: var(--principalBlue);
+    border-radius: 20px;
+    border: 5px solid #eee;
+  }
+
+.partidas-container h3 {
+    font-size: 1.2em;
+    text-align: left;
+}
+
+.partidas--finalizadas,
+.partidas--andamento,
+.partidas--acontecer {
+    background-color: var(--opacityBlue);
+    border-radius: 8px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.partidas--andamento h4 {
+    position: relative;
+}
+
+.partidas--andamento h4::before { 
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    border-radius: 100%;
+    background-color: green;
+    transform: translateY(-50%);
+    top: 50%;
+    margin-left: -15px;
+    animation: onlineAnimation infinite 1s alternate-reverse ease-in-out;
+    border: 1px solid #f7f7f9;
+    opacity: .0;
+}
+
+@keyframes onlineAnimation {
+    from {
+        box-shadow: 0 0 0 2px rgba(0, 128, 0, .3);
+        opacity: 1;
+    }
+
+}
+
+.partidas-container h4 {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+.partida-block {
+    width: 100%;
+    font-size: 1em;
+    font-weight: 600;
+    padding: 10px 0;
+}
+
+.competicao {
+    font-size: .8em;
+    font-weight: 800;
+    padding: 0 10px;
+}
+
+.clubes-block {
+    display: flex;
+    gap: 6px;
+    justify-content: center;
+}
+
+.clubes-block img {
+    width: 20px;
+    height: 20px;
+}
+
+.hora-partida {
+    font-size: .6em;
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
+
+@media screen and (max-width: 400px) {
+    * {
+        font-size: 13px;
+    }
+
+}
+
+@media screen and (max-width: 550px) {
+    .legenda-block ul {
+        gap: 0;
+        flex-direction: column;
+    }
+
+    body {
+        flex-direction: column;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    .artilheiros-container {
+        width: 100%;
+    }
+    
+    .container2 {
+        width: 100%;
+        height: 100% !important;
+    }
+
+    .partidas-container {
+        overflow-y: visible;
+    }
+    
+}
