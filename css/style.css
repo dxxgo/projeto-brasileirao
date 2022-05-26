@@ -257,7 +257,7 @@ h1{
     gap: 10px;
     flex-direction: column;
     text-align: center;
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 
 .partidas-container::-webkit-scrollbar {
