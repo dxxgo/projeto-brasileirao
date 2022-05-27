@@ -284,7 +284,7 @@ h1{
 
 .partidas--finalizadas,
 .partidas--andamento,
-.partidas--acontecer {
+.partidas--proximas {
     background-color: var(--opacityBlue);
     border-radius: 8px;
     padding: 10px;
