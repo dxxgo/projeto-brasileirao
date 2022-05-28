@@ -13,9 +13,9 @@ async function getEquipes(url) {
         dados.shift();
         let equipes = dados;
         criaObjetoTime(equipes);
-        alterarHeight();
     }
     );
+    alterarHeight();
     document.querySelector('body').style.opacity = '1';
 }
 function alterarHeight() {
