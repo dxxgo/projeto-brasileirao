@@ -279,6 +279,7 @@ h1{
 .partidas-container h3 {
     font-size: 1.2em;
     text-align: left;
+    font-weight: 800;
 }
 
 .partidas--finalizadas,
